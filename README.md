@@ -1,2 +1,2 @@
 # iti
-Primitive interval timer for bash shell
+Primitive command line interval timer for bash
