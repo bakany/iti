@@ -36,8 +36,6 @@ function print_time {
 }
 
 while read xx yy; do
-	# make beep
-	echo -e "\a"
 	# update console every second for xx seconds while doing countdown
 	secs=$xx
 	while [ $secs -gt 0 ]; do
@@ -47,4 +45,6 @@ while read xx yy; do
 		sleep 1
 		: $((secs--))
 	done
+        # make beep
+        echo -e "\a"
 done < $file
